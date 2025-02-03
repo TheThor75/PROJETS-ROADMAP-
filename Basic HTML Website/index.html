@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=" Une petit exemple du structure HTML" />
+    <meta property="og:title" content="Basic Website" />
+    <meta
+      property="og:description"
+      content="Une petit démonstration de comment on fait un site web "
+    />
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+    <title>Basic Website</title>
+  </head>
+  <body>
+    <header
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      "
+    >
+      <h2>TheThor75</h2>
+      <nav style="display: flex; gap: 20px">
+        <a href="#home">Home</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Article">Article</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <h2 style="text-align: center" id="home">Frondent Developer</h2>
+      <p style="text-align: center">
+        HTML with appropriate layout, and a bit of style
+      </p>
+      <section style="display: flex; justify-content: space-between; gap: 20px">
+        <section>
+          <h3 id="Projects">Projects</h3>
+          <p>HTML Only Portfolio</p>
+          <p>Calculator</p>
+          <p>Quiz App</p>
+          <p>Countdown Timer</p>
+          <p>Product Upcoming Page</p>
+        </section>
+        <section>
+          <h3>Word Experience</h3>
+          <p>roadmap.sh <br />Solved all the frondent Projects</p>
+          <h4>OpenSource work</h4>
+          <p>
+            Contributed to 50 opensource projects. Made my projects with 200
+            GitHub Stars
+          </p>
+          <a href="https://github.com/TheThor75/PROJETS-ROADMAP-"
+            >GitHub Profile</a
+          >
+        </section>
+        <section>
+          <h3>Education</h3>
+          <p>
+            Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30
+            sessions
+          </p>
+          <p>Courses i took:</p>
+          <div>
+            <ul>
+              <li>Object Oriented Programming</li>
+              <li>Data Structure and Algorithms</li>
+              <li>Web Enginnering</li>
+              <li>Human Computer Interaction</li>
+              <li>Artificial intelligence</li>
+              <li>Database management Systems</li>
+              <li>Distributed Database Systems</li>
+              <li>Computer Graphics</li>
+              <li>Discreet Mathematics</li>
+            </ul>
+          </div>
+        </section>
+      </section>
+      <article>
+        <h3 style="text-align: center" id="Article">
+          Reviews from my Teachers
+        </h3>
+        <section
+          style="display: flex; justify-content: space-between; gap: 20px"
+        >
+          <div>
+            <p>
+              John doe was a brilliant student; always stood out with his
+              assignments.
+            </p>
+            <p>Jane Doe Assistant Professor</p>
+          </div>
+          <div>
+            <p>
+              John doe was a brilliant student; always stood out with his
+              assignments.
+            </p>
+            <p>Jane Doe Assistant Professor</p>
+          </div>
+          <div>
+            <p>
+              John doe was a brilliant student; always stood out with his
+              assignments.
+            </p>
+            <p>Jane Doe Assistant Professor</p>
+          </div>
+        </section>
+      </article>
+      <section>
+        <h3 id="Contact" style="text-align: center">Contact</h3>
+        <form>
+          <label for="names">Name:</label>
+          <input type="text" name="names" /><br />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="" /><br />
+          <textarea name="tex" id="" cols="20" rows="10"></textarea>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
