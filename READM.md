@@ -10,5 +10,4 @@ Cliquez sur une image pour accéder au projet correspondant.
 <a href="./CV">
 <img src="./img/cv img.jpeg" alt="Singe page CV" width="50%" style>
 </a>
-
 </p>
