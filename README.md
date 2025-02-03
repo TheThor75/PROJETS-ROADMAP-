@@ -10,7 +10,7 @@ Cliquez sur une image pour accéder au projet correspondant.
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 10px;
-          "> <p style="box-shadow: 4px 3px 8px black">
+          "> <p >
 <a href="./CV">
 <img src="./img/cv img.jpeg" alt="Singe page CV" width="50%" height="50%">
 </a>
