@@ -25,7 +25,7 @@ Cliquez sur une image pour accéder au projet correspondant.
            </div>
             <div>
               <a href="./Personal Portfolio">
-                 <img src="./img/pro3.jpeg" alt="personal portfolio" width="240px" height="350px">
+                 <img src="./img/pro4.jpeg" alt="personal portfolio" width="240px" height="350px">
               </a>
            </div>
 </section>
