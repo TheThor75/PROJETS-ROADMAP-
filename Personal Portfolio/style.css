@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", serif;
+  transition: background-color 1s, color 1s;
+  background-color: #dfd4d4;
+  color: #000;
+}
+/*==== Mode dark and light ====*/
+.mode-contenair {
+  display: flex;
+  gap: 12px;
+  margin: 8px;
+}
+input[type="radio"] {
+  display: none;
+}
+
+.toggle-label1,
+.toggle-label2 {
+  padding: 6px;
+
+  border-radius: 40px;
+  background-color: 1s;
+  cursor: pointer;
+}
+#light-mode:checked + label {
+  background: #dfd4d4;
+}
+#dark-mode:checked + label {
+  background: #131212e0;
+}
+body:has(#dark-mode:checked) {
+  background: #131212e0;
+  color: #ddd9d9;
+}
+body:has(#dark-mode:checked) .toggle-label1 {
+  border-color: #fcfbfb;
+  background-color: rgb(241, 241, 241);
+  color: #000;
+}
+body:has(#light-mode:checked) .toggle-label2 {
+  border-color: #dfd4d4;
+  background-color: rgb(14, 13, 13);
+  color: #f8f6f6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+}
+.logo {
+  color: #ca8215;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-style: italic;
+}
+.nav-link a {
+  color: #ca8215;
+  margin: 20px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.entete {
+  text-align: center;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+.entete p {
+  padding: 8px;
+}
+/*=====  CONTENU =====*/
+.main {
+  padding: 25px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+.main-contenair {
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+.main-contenair h3 {
+  text-align: center;
+  padding: 20px 0;
+}
+.main-content button {
+  color: #000;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 4px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ca8215c0;
+}
+
+.cours {
+  transform: translateX(24px);
+}
+
+#Article {
+  text-align: center;
+  margin: 12px;
+}
+/*======== Part moon and light ===*/
+
+/*========== Contact =======*/
+
+.form h3 {
+  text-align: center;
+  margin: 10px;
+}
+.form legend {
+  margin: 0 25px;
+  font-weight: 700;
+}
+.form-contenair {
+  margin: 10px;
+  padding: 12px;
+}
+.form-groub {
+  padding: 5px;
+  margin: 5px;
+}
+.form-groub input {
+  width: 50%;
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
+  background-color: #faeeee;
+}
+.form-groub label {
+  font-weight: 700;
+}
+#text {
+  width: 50%;
+  background-color: #faeeee;
+}
+.form-label {
+  display: flex;
+  justify-items: flex-start;
+}
+.form-groub button {
+  padding: 8px 28px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ca8215;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.form-groub button:hover {
+  background-color: #98e7ec;
+}
+
+/*==== RESPONSIV 860PX ========*/
+@media (max-width: 860px) {
+  .header {
+    position: relative;
+    display: block;
+    justify-items: center;
+    gap: 20px;
+  }
+  .mode-contenair {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .toggle-label {
+    margin: 0;
+    padding: 3px;
+  }
+  .nav-link {
+    margin: 20px;
+  }
+}
+
+/*=== 780px  ======*/
+
+@media (max-width: 780px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-content3 {
+    grid-column: 1 / -1;
+  }
+  .Article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .form-groub input {
+    width: 100%;
+  }
+  #text {
+    width: 100%;
+  }
+}
+
+/*====== 560px ==-*/
+@media (max-width: 560px) {
+  .nav-link {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-contenair {
+    display: grid;
+    grid-template-columns: colunm;
+  }
+  .form-groub input {
+    width: 100%;
+  }
+  #text {
+    width: 100%;
+  }
+}
