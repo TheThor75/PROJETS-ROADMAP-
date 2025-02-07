@@ -7,25 +7,22 @@
 ---
 
 Cliquez sur une image pour accéder au projet correspondant.
-
-<section  style="
+<p  style="
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-          "> 
-          <div>
-              <a href="./CV">
-                 <img src="./img/cv img.jpeg" alt="Singe page CV" width="240px" height="350px">
-              </a>
-           </div>
-           <div>
-              <a href="./Basic HTML Website">
-                 <img src="./img/pro3.jpeg" alt="BAsic HTML Website" width="240px" height="350px">
-              </a>
-           </div>
-            <div>
-              <a href="./Personal Portfolio">
-                 <img src="./img/pro4.jpeg" alt="personal portfolio" width="240px" height="350px">
-              </a>
-           </div>
-</section>
+          ">
+<a href="./CV">
+<img src="./img/cv img.jpeg" alt="Singe page CV" width="47%" >
+</a>
+<a href="./Basic HTML Website">
+<img src="./img/pro3.jpeg" alt="BAsic HTML Website" width="47%">
+</a>
+</p>
+<p  style="
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+          ">
+<a href="./Personal Portfolio">
+<img src="./img/pro4.jpeg" alt="personal portfolio" width="47%">
+</a>
+</p>
